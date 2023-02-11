@@ -11,6 +11,9 @@ const mutations={
             state.cart.data.splice(state.cart.data.indexOf(product), 1)
             state.products.data.push(product)
         },
+        ChangeSearch(state, srch){
+            state.search = srch;
+        }
     }
 
     export default mutations

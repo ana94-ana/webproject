@@ -2,6 +2,7 @@
 import ListTitle from './ListTitle.vue'
 import UList from './UList.vue'
 import { useStore } from 'vuex'
+import Search from './Search.vue'
 
 const store=useStore()
 
@@ -13,8 +14,11 @@ const action=store.getters.getProductsObject.action
 </script>
 
 <template>
+
 <div class="w-full">
+    <Search/>
     <ListTitle :title="title"/>
     <UList :data="productsData" :action="action"/>
+    
 </div>
 </template>

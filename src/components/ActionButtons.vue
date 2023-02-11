@@ -19,6 +19,6 @@ function removeFromCart(){
 
 <template>
 
-    <button v-if="tocart" @click.prevent="addToCart" type="button" :class="store.getters.getAddButtonClasses">sumbit</button>
+    <button v-if="tocart" @click.prevent="addToCart" type="button" :class="store.getters.getAddButtonClasses">ADD</button>
     <button v-else @click.prevent="removeFromCart" type="button"  :class="store.getters.getRemoveButtonClasses"> remove </button>
 </template>
