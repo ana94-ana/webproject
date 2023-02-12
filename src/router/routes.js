@@ -3,6 +3,7 @@ import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import WatchList from '../views/watchlist.vue'
 import Movies from '../views/Movies.vue'
+import DisplayMovies from '../components/menus/DisplayMovies.vue'
 
 
 const routes= [
@@ -25,12 +26,19 @@ const routes= [
         path: '/watchlist',
         name: "WatchList",
         component: WatchList
+        
     },
     {
         path: '/movies',
         name: "Movies",
-        component: Movies
-    }
+        component: Movies,
+     
+    },
+    {
+            path: '/movie/:id',
+            name: "Movie",
+            component: DisplayMovies
+        } 
 ]
 
 export default routes

@@ -7,6 +7,13 @@ const actions={
        
     removeItemFromCart({commit} ,payload) {
         commit('REMOVE_ITEM_TO_CART', payload)
-    }}
+    },
+    getRecordById({commit},payload){
+        commit('GET_MOVIES_BY_ID',payload)
+       
+    }
+
+}
+
 
     export default actions

@@ -1,6 +1,7 @@
 <script setup>
 import menu from './menu'
 
+
 </script>
 
 <template>
@@ -24,8 +25,8 @@ import menu from './menu'
 <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
   <div class="text-sm lg:flex-grow">
     <RouterLink v-for="item in menu" :key="item.index"  :to="{name: item.routeName}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-       {{ item.title }}
-       </RouterLink>
+       {{ item.title }}<span v-if="item.num">({{ item.num }})</span>
+       </RouterLink> 
   </div>
   <div>
     <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>

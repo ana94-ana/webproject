@@ -13,6 +13,9 @@ const mutations={
         },
         ChangeSearch(state, srch){
             state.search = srch;
+        },
+        GET_MOVIES_BY_ID(state, payload){
+           state.activeMovies= state.products.data.find(item => item.id === +payload)
         }
     }
 
