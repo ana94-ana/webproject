@@ -26,6 +26,11 @@ onMounted(() => {
     <mainLayout>
         <template #header>
             <topNavigationMenu />
+            {{ movi }}
+        </template>
+    </mainLayout>
+    <!-- <template #header>
+            <topNavigationMenu />
             <div class="max-w-sm rounded overflow-hidden shadow-lg mg-left">
                 <img class="w-full" :src="movi.cover">
                 <div class="px-6 py-4">
@@ -35,7 +40,7 @@ onMounted(() => {
                     </p>
                 </div>
             </div>
-        </template>
-    </mainLayout>
+        </template>-->
+    
 
 </template>
