@@ -1,5 +1,16 @@
+<script setup>
+import TopNavigationMenu from '../components/menus/topNavigationMenu.vue'
+import WatchLeyout from '../layouts/watchLeyout.vue'
+
+</script>
+
 <template>
-    <div>
+   <WatchLeyout>
+    <template #footer>
+        <TopNavigationMenu/>
         <h1> About </h1>
-    </div>
+    </template>
+   </WatchLeyout>
+        
+    
 </template>

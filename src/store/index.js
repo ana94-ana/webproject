@@ -1,12 +1,9 @@
 import { createStore } from 'vuex'
-import productsModule from './modules/products/indexs'
-import buttonsModule from './modules/products/buttons'
-
-
-
+import mainPlugin from './plugins/mainPlugin'
+import menuPlugin from './plugins/menuPlugin'
 
 const store = createStore({
-    modules: [ productsModule, buttonsModule ]
+    plugins: [ mainPlugin, menuPlugin ],
 })
 
 export default store

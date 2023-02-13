@@ -1,10 +1,10 @@
 <script setup>
 defineProps({
-     title:{
-            type:String,
-            requaired:true
-        }
-    })
+    title: {
+        type: String,
+        requaired: true
+    }
+})
 
 </script>
 

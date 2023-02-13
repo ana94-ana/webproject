@@ -1,12 +1,16 @@
-
-import Products from '../components/Products.vue';
-
 <script setup>
+import mainLayout from '../layouts/mainLayout.vue'
+import topNavigationMenu from '../components/menus/topNavigationMenu.vue'
+
 
 </script>
 
 <template>
-    <div>
-        <h1> Home Page</h1>
-    </div>
+    <mainLayout>
+        <template #footer>
+            <topNavigationMenu />
+            <h1> Home Page</h1>
+        </template >  
+    </mainLayout>
+
 </template>

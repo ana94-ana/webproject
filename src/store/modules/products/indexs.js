@@ -59,8 +59,9 @@ const productsModule={
         },
         getters,
         mutations,
-        actions,
+        actions
         
+    
   
 }
 

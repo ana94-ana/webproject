@@ -1,17 +1,17 @@
 <script setup>
 import { useStore } from 'vuex'
 
-const props= defineProps({
-    tocart:{type:Boolean, requaired:false, default:true},
-    id:{type:Number, requaired:true}
+const props = defineProps({
+    tocart: { type: Boolean, requaired: false, default: true },
+    id: { type: Number, requaired: true }
 })
-const store=useStore()
+const store = useStore()
 
-function addToCart(){
+function addToCart() {
     store.dispatch('addItemToCart', props.id)
-  
+
 }
-function removeFromCart(){
+function removeFromCart() {
     store.dispatch('removeItemFromCart', props.id)
 
 }
@@ -19,6 +19,8 @@ function removeFromCart(){
 
 <template>
 
-    <button v-if="tocart" @click.prevent="addToCart" type="button" :class="store.getters.getAddButtonClasses">ADD</button>
-    <button v-else @click.prevent="removeFromCart" type="button"  :class="store.getters.getRemoveButtonClasses"> remove </button>
+    <button v-if="tocart" @click.prevent="addToCart" type="button"
+        :class="store.getters.getAddButtonClasses">ADD</button>
+    <button v-else @click.prevent="removeFromCart" type="button" :class="store.getters.getRemoveButtonClasses"> remove
+    </button>
 </template>

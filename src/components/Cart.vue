@@ -3,17 +3,17 @@ import ListTitle from './ListTitle.vue'
 import UList from './UList.vue'
 import { useStore } from 'vuex'
 
-const store=useStore()
+const store = useStore()
 
-const title=store.getters.getCartObject.name
-const data=store.getters.getCartObject.data
-const action=store.getters.getCartObject.action
+const title = store.getters.getCartObject.name
+const data = store.getters.getCartObject.data
+const action = store.getters.getCartObject.action
 
 
 </script>
 <template>
     <div class="w-full">
-    <ListTitle :title="title"/>
-    <UList :data="data" :action="action"/>
+        <ListTitle :title="title" />
+        <UList :data="data" :action="action" />
     </div>
 </template>
