@@ -9,10 +9,8 @@ const getters = {
    getactiveMovie(state) {
       return state.activeMovie
    },
-   getCurrency(state){
-      return state.env
-   },
-  
+
+   
 
 }
 

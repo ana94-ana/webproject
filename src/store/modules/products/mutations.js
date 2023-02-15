@@ -16,7 +16,8 @@ const mutations={
         },
         GET_MOVIE_BY_ID(state, payload){
             state.activeMovie= state.products.data.find(item => item.id === +payload)
-         }
+         },
+        
     }
 
     export default mutations

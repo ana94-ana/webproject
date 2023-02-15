@@ -1,3 +1,6 @@
+
+
+
 const actions={
     addItemToCart({commit}, payload) {
         setTimeout(()=>{
@@ -11,7 +14,8 @@ const actions={
     getRecordById({commit},payload){
         commit('GET_MOVIE_BY_ID',payload)
        
-    }
+    },
+   
 
 }
 
