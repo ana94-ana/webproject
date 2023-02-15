@@ -2,8 +2,6 @@
 import { useStore } from 'vuex'
 const store = useStore()
 const menu = store.getters.topNavigationMenu
-
-
 </script>
 
 <template>
@@ -43,4 +41,3 @@ const menu = store.getters.topNavigationMenu
   </nav>
 
 </template>
-

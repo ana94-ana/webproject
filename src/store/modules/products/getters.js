@@ -6,9 +6,13 @@ const getters = {
    getCartObject(state) {
       return state.cart
    },
-   getactiveMovies(state) {
-      return state.activeMovies
-   }
+   getactiveMovie(state) {
+      return state.activeMovie
+   },
+   getCurrency(state){
+      return state.env
+   },
+  
 
 }
 

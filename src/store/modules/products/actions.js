@@ -9,7 +9,7 @@ const actions={
         commit('REMOVE_ITEM_TO_CART', payload)
     },
     getRecordById({commit},payload){
-        commit('GET_MOVIES_BY_ID',payload)
+        commit('GET_MOVIE_BY_ID',payload)
        
     }
 

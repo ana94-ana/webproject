@@ -5,7 +5,7 @@ import getters from "./getters"
 const productsModule={
         state() {
             return {
-                activeMovies:null,
+                activeMovie:null,
                 products: {
                     name: "Movies",
                     action: true,

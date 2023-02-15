@@ -1,44 +1,44 @@
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Contact from '../views/Contact.vue'
-import WatchList from '../views/watchlist.vue'
-import Movies from '../views/Movies.vue'
-import DisplayMovies from '../components/menus/DisplayMovies.vue'
 
 
-const routes= [
+
+const routes = [
     {
         path: '/',
         name: "Home",
-        component: Home
+        component: () => import('@/views/Home.vue'),
     },
     {
         path: '/about',
         name: "About",
-        component: About
+        component: () => import('@/views/About.vue'),
     },
     {
         path: '/contact',
         name: "Contact",
-        component: Contact
+        component: () => import('@/views/Contact.vue'),
     },
     {
         path: '/watchlist',
         name: "WatchList",
-        component: WatchList
-        
+        component: () => import('@/views/watchlist.vue'),
+
     },
     {
         path: '/movies',
         name: "Movies",
-        component: Movies,
-     
+        component: () => import('@/views/Movies.vue'),
+
     },
     {
-            path: '/movie/:id',
-            name: "Movie",
-            component: DisplayMovies
-        } 
+        path: '/movie/:id',
+        name: "Movie",
+        component: () => import('@/components/menus/DisplayMovies.vue')
+    },
+    {
+        path: '/currency',
+        name: "Currency",
+        component: () => import('@/views/Currency.vue'),
+    }
 ]
 
 export default routes

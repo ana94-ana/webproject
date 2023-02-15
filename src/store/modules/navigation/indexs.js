@@ -6,7 +6,8 @@ const navigationModule = {
                 { routeName: 'About', title: 'About Us'},
                 { routeName: 'Contact', title: 'Contact Us'},
                 { routeName: 'Movies', title: 'Movies' },
-                { routeName: 'WatchList', title: 'Watch List'}
+                { routeName: 'WatchList', title: 'Watch List'},
+                { routeName: 'Currency', title: 'Currencies '}
               
               ]
         }

@@ -11,12 +11,12 @@ const mutations={
             state.cart.data.splice(state.cart.data.indexOf(product), 1)
             state.products.data.push(product)
         },
-        ChangeSearch(state, srch){
-            state.search = srch;
+        ChangeSearch(state, payload){
+            state.search=payload
         },
-        GET_MOVIES_BY_ID(state, payload){
-           state.activeMovies= state.products.data.find(item => item.id === +payload)
-        }
+        GET_MOVIE_BY_ID(state, payload){
+            state.activeMovie= state.products.data.find(item => item.id === +payload)
+         }
     }
 
     export default mutations
