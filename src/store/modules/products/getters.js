@@ -9,8 +9,11 @@ const getters = {
    getactiveMovie(state) {
       return state.activeMovie
    },
-
-   
+  
+   getCurrencies(state){
+      return state.currencies
+    },
+ 
 
 }
 

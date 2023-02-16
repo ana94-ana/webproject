@@ -17,7 +17,10 @@ const mutations={
         GET_MOVIE_BY_ID(state, payload){
             state.activeMovie= state.products.data.find(item => item.id === +payload)
          },
-        
+         
+         STORE_CURRENCIES(state,payload){
+            state.currencies=payload
+        },
     }
 
     export default mutations
