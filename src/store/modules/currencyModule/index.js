@@ -1,6 +1,6 @@
-import getters from "../products/getters"
-import mutations from "../products/mutations"
-import actions from "../products/actions"
+import getters from "./getters"
+import mutations from "./mutations"
+import actions from "./actions"
 
 const currencyModule={
     state() {

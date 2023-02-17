@@ -10,11 +10,10 @@ const getters = {
       return state.activeMovie
    },
   
-   getCurrencies(state){
-      return state.currencies
-    },
+    getSearch(state){
+      return state.srch
+    }
  
-
 }
 
 export default getters

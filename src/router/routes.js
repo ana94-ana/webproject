@@ -38,6 +38,11 @@ const routes = [
         path: '/currency',
         name: "Currency",
         component: () => import('@/views/Currency.vue'),
+    },
+    {
+        path: '/youtube',
+        name: "Youtube",
+        component: () => import('@/views/Youtube.vue'),
     }
 ]
 

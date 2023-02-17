@@ -5,6 +5,7 @@ import getters from "./getters"
 const productsModule={
         state() {
             return {
+                srch:"",
                 activeMovie:null,
                 products: {
                     name: "Movies",
@@ -59,7 +60,7 @@ const productsModule={
         },
         getters,
         mutations,
-        actions
+        actions,
         
     
   
