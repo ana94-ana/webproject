@@ -6,7 +6,7 @@ import WatchLeyout from '../layouts/watchLeyout.vue'
 
 <template>
    <WatchLeyout>
-    <template #footer>
+    <template #header>
         <TopNavigationMenu/>
         <h1> About </h1>
     </template>

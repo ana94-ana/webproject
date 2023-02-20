@@ -7,7 +7,7 @@ import topNavigationMenu from '../components/menus/topNavigationMenu.vue'
 
 <template>
     <mainLayout>
-        <template #footer>
+        <template #header>
             <topNavigationMenu />
             <h1> Home Page</h1>
         </template >  

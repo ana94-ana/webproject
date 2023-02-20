@@ -1,5 +1,5 @@
 <script setup>
-import CurrenciesInfo from '../components/menus/CurrenciesInfo.vue';
+import CurrenciesInfo from '../components/menus/CurrenciesInfo.vue'
 import TopNavigationMenu from '../components/menus/topNavigationMenu.vue'
 import currencieLayout from '../layouts/currencieLayout.vue'
 

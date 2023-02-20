@@ -9,7 +9,7 @@ import topNavigationMenu from '../components/menus/topNavigationMenu.vue'
 <template>
 
         <WatchLeyout>
-        <template #footer>
+        <template #header>
           <topNavigationMenu/>
           <Cart/> 
         </template>
