@@ -2,6 +2,8 @@
 import YoutubeLayout from '../layouts/youtubeLayout.vue'
 import Sidebar from '../store/youtube/Sidebar.vue'
 import HeaderSlot from '../store/youtube/HeaderSlot.vue'
+import Buttons from '../store/youtube/Buttons.vue'
+
 
 
 </script>
@@ -14,6 +16,9 @@ import HeaderSlot from '../store/youtube/HeaderSlot.vue'
         </template>
         <template #footer>
            <Sidebar/>  
+        </template>
+        <template #buttons>
+            <Buttons/>
         </template>
     </YoutubeLayout>
 </template>
