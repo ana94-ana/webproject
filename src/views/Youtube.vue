@@ -1,24 +1,22 @@
 <script setup>
 import YoutubeLayout from '../layouts/youtubeLayout.vue'
-import Sidebar from '../store/youtube/Sidebar.vue'
-import HeaderSlot from '../store/youtube/HeaderSlot.vue'
-import Buttons from '../store/youtube/Buttons.vue'
-
+import Sidebar from '../components/Sidebar.vue'
+import Header from '../components/Header.vue'
+import Tag from '../components/Tag.vue'
 
 
 </script>
 
 <template>
     <YoutubeLayout>
-        <h1>youtube</h1>
         <template #header>
-            <HeaderSlot/>
+            <Header/>
         </template>
         <template #footer>
            <Sidebar/>  
         </template>
-        <template #buttons>
-            <Buttons/>
+        <template #tags>
+            <Tag/>
         </template>
     </YoutubeLayout>
 </template>
