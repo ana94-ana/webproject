@@ -1,8 +1,8 @@
 import { createStore } from 'vuex'
-import youtubePlugin from './plugins/youtubePlugin'
+import mainPlugin from './plugins/mainPlugin'
 
 const store = createStore({
-    plugins: [ youtubePlugin ],
+    plugins: [ mainPlugin ],
 })
 
 export default store

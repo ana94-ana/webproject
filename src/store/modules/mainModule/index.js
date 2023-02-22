@@ -1,10 +1,10 @@
 
 
-const youtubeModule={
+const mainModule={
     state() {
         return {
         }
     }
 }
 
-export default youtubeModule
+export default mainModule
