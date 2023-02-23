@@ -1,7 +1,7 @@
 <script setup>
-import HomeIcon from '../sidebarIcons/HomeIcon.vue'
-import SortsIcon from '../sidebarIcons/SortsIcon.vue'
-import SubscriptionsIcon from '../sidebarIcons/SubscriptionsIcon.vue'
+import HomeIcon from '../icon/sidebarIcons/HomeIcon.vue'
+import SortsIcon from '../icon/sidebarIcons/SortsIcon.vue'
+import SubscriptionsIcon from '../icon/sidebarIcons/SubscriptionsIcon.vue'
 </script>
 <template>
     <div class="w-full  px-1">

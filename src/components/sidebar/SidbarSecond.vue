@@ -1,10 +1,10 @@
 <script setup>
-import LibraryIcon from '../sidebarIcons/LibraryIcon.vue'
-import HistoryIcon from '../sidebarIcons/HistoryIcon.vue'
-import YourVideosIcon from '../sidebarIcons/YourVideosIcon.vue'
-import SeeLaterIcon from '../sidebarIcons/SeeLaterIcons.vue'
-import LikedVideosIcon from '../sidebarIcons/LikedVideosIcon.vue'
-import VoisesShortsIcon from '../sidebarIcons/VoisesShortsIcon.vue'
+import LibraryIcon from '../icon/sidebarIcons/LibraryIcon.vue'
+import HistoryIcon from '../icon/sidebarIcons/HistoryIcon.vue'
+import YourVideosIcon from '../icon/sidebarIcons/YourVideosIcon.vue'
+import SeeLaterIcon from '../icon/sidebarIcons/SeeLaterIcons.vue'
+import LikedVideosIcon from '../icon/sidebarIcons/LikedVideosIcon.vue'
+import VoisesShortsIcon from '../icon/sidebarIcons/VoisesShortsIcon.vue'
 </script>
 <template>
     <div class="flex flex-col items-center w-full mt-5">

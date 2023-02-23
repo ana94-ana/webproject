@@ -1,10 +1,10 @@
 <script setup>
 import togleNavigation from './buttons/togleNavigation.vue'
 import Search from './inputs/search.vue'
-import voice from './menuIcons/voice.vue'
-import CreateIcon from './menuIcons/CreateIcon.vue'
-import NotificationIcon from './menuIcons/NotificationIcon.vue'
-import AcountIcone from './menuIcons/AcountIcone.vue'
+import voice from './icon/menuIcons/voice.vue'
+import CreateIcon from './icon/menuIcons/CreateIcon.vue'
+import NotificationIcon from './icon/menuIcons/NotificationIcon.vue'
+import AcountIcone from './icon/menuIcons/AcountIcone.vue'
 
 </script>
 <template>

@@ -1,8 +1,8 @@
 <script setup>
-import PopularOnesIcon from '../sidebarDiscoveryIcon/PopularOnesIcon.vue'
-import MusicIcon from '../sidebarDiscoveryIcon/MusicIcon.vue'
-import VideoGamesIcon from '../sidebarDiscoveryIcon/VideoGamesIcon.vue'
-import SportsIcon from '../sidebarDiscoveryIcon/SportsIcon.vue'
+import PopularOnesIcon from '../icon/sidebarDiscoveryIcon/PopularOnesIcon.vue'
+import MusicIcon from '../icon/sidebarDiscoveryIcon/MusicIcon.vue'
+import VideoGamesIcon from '../icon/sidebarDiscoveryIcon/VideoGamesIcon.vue'
+import SportsIcon from '../icon/sidebarDiscoveryIcon/SportsIcon.vue'
 </script>
 <template>
     <div class="flex flex-col items-center w-full mt-3">
