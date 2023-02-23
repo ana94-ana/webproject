@@ -2,7 +2,7 @@ const navigationModule = {
     state() {
         return {
             menu:[
-                { routeName: 'Youtube', title: 'Youtube '}
+                { routeName: 'Home', title: 'Home '}
               
               ]
         }

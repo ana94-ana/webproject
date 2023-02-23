@@ -2,8 +2,8 @@
 const routes = [
     {
         path: '/',
-        name: "Youtube",
-        component: () => import('@/views/Youtube.vue'),
+        name: "Home",
+        component: () => import('@/views/Home.vue'),
     },
    
 ]

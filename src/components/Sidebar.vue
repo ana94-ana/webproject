@@ -5,10 +5,10 @@ import SidebarSecond from './sidebar/SidbarSecond.vue'
 
 </script>
 <template>
-    <div class="fixed sticky top-0 ">
+    <div class="fixed ">
         <div class="flex  flex-col items-center w-60  ">
             <SidebarFirst />
-            <div class="sticky top-0  w-full  px-2">
+            <div class="w-full  px-2">
                 <SidebarSecond />
             </div>
             <div class="w-full sticky top-0   px-2">
