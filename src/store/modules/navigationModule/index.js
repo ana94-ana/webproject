@@ -19,7 +19,7 @@ const navigationModule = {
             sidebar: [
                 {
                     title: 'მთავარი',
-                    to: 'Homes',
+                    to: 'Home',
                     icon: HomeIcon
                 },
                 {
