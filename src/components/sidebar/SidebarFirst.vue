@@ -1,23 +1,18 @@
 <script setup>
-import HomeIcon from '../icon/sidebarIcons/HomeIcon.vue'
-import SortsIcon from '../icon/sidebarIcons/SortsIcon.vue'
-import SubscriptionsIcon from '../icon/sidebarIcons/SubscriptionsIcon.vue'
+import SidebarLink from '../SidebarLink.vue'
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
+const store = useStore()
+const menu = computed(() => store.getters['sidebar/getSidebarMenu'])
+
+
+
 </script>
 <template>
-    <div class="w-full  px-1">
-                <div class="flex flex-col items-center w-full">
-                    <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-slate-300" href="#">
-                        <HomeIcon />
-                        <span class="ml-2 text-sm font-medium">მთავარი</span>
-                    </a>
-                    <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-slate-300" href="#">
-                        <SortsIcon />
-                        <span class="ml-2 text-sm font-medium">Sorts</span>
-                    </a>
-                    <a class="flex items-center w-full h-12 px-3 mt-2  hover:bg-slate-300  rounded" href="#">
-                        <SubscriptionsIcon />
-                        <span class="ml-2 text-sm font-medium">გამოწერები</span>
-                    </a>
-                </div>
-            </div>
+  <div class="w-full ">
+    <div class="flex flex-col items-center w-full">
+      <SidebarLink v-for="item in menu" :data="item" />
+    </div>
+  </div>
 </template>

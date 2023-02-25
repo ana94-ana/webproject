@@ -1,29 +1,24 @@
 <script setup>
-import togleNavigation from './buttons/togleNavigation.vue'
-import Search from './inputs/search.vue'
-import voice from './icon/menuIcons/voice.vue'
-import CreateIcon from './icon/menuIcons/CreateIcon.vue'
-import NotificationIcon from './icon/menuIcons/NotificationIcon.vue'
-import AcountIcone from './icon/menuIcons/AcountIcone.vue'
-
+import togleNavigation from "./buttons/togleNavigation.vue"
+import Search from "./inputs/search.vue"
+import CreateIcon from "./icon/menuIcons/CreateIcon.vue"
+import NotificationIcon from "./icon/menuIcons/NotificationIcon.vue"
+import AcountIcone from "./icon/menuIcons/AcountIcone.vue"
+import youtubeLogo from "./logo/youtubeLogo.vue"
 </script>
 <template>
-    <div class="flex sticky top-0 items-center justify-between flex-wrap p-2 ">
-        <div class="flex items-center flex-shrink-0  mr-6">
-            <togleNavigation />
-        </div>
-        <div class="flex items-center flex-shrink-0  mr-6 w-1/2">
-            <div class=" mt-3 flex w-full  ">
-                <Search />
-                <div class="flex items-center flex-shrink-0 mr-6">
-                    <voice />
-                </div>
-            </div>
-        </div>
-        <div class="flex items-center flex-shrink-0 mr-6">
-            <CreateIcon />
-            <NotificationIcon />
-            <AcountIcone />
-        </div>
+  <div class="flex sticky top-0 items-start justify-between items-center">
+    <div class="flex flex-row w-full">
+      <togleNavigation />
+      <youtubeLogo class="w-24 h-auto" />
     </div>
+    <div class="flex flex-row w-full">
+      <Search />
+    </div>
+    <div class="flex flex-row justify-end w-full space-x-4 ">
+      <CreateIcon />
+      <NotificationIcon />
+      <AcountIcone />
+    </div>
+  </div>
 </template>

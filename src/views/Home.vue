@@ -2,7 +2,7 @@
 import YoutubeLayout from '../layouts/youtubeLayout.vue'
 import Sidebar from '../components/Sidebar.vue'
 import Header from '../components/Header.vue'
-import Tag from '../components/Tag.vue'
+import TagsSlider from '../components/sliders/TagsSlider.vue'
 
 
 </script>
@@ -12,11 +12,11 @@ import Tag from '../components/Tag.vue'
         <template #header>
             <Header/>
         </template>
-        <template #footer>
+        <template #sidebar>
            <Sidebar/>  
         </template>
         <template #tags>
-            <Tag/>
+            <TagsSlider/>
         </template>
     </YoutubeLayout>
 </template>
