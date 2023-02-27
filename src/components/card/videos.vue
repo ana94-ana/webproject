@@ -5,9 +5,6 @@
     const video = store.getters.getVideos
 </script>
 <template>
-    <div class="inline-block">
-    <video :src="video?.url"></video>
-    </div>
    <ul class="card object-cover object-center w-52 mx-auto absolute right-12"> 
     <li v-for="item in video" :key="item?.index">
         <a :href="item?.url">
