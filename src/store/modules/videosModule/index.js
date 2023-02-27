@@ -1,12 +1,84 @@
+
 const videosModule = {
-    namespaced: true,
+   namespaced: true,
     state() {
         return {
-            videos: [
+            video: [
                 {
-                    image:'',
-                    url:'',
-                    name:""
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
+                
+                },
+                {
+                    image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
+                    url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
+                    name:"Marshmello, Avicii, Coldplay, Martin Garrix",
+                    date: "2 years"
                 
                 },
               
@@ -15,10 +87,10 @@ const videosModule = {
     },
     getters: {
         getVideos(state) {
-            return state.videos
+            return state.video
         },
     }
 
-}
+    }
 
 export default videosModule
