@@ -3,14 +3,14 @@ import YoutubeLayout from '../layouts/youtubeLayout.vue'
 import Sidebar from '../components/Sidebar.vue'
 import Header from '../components/Header.vue'
 import TagsSlider from '../components/sliders/TagsSlider.vue'
-import videos from '../components/card/videos.vue'
+import Videos from '../components/card/Videos.vue'
 
 
 </script>
 
 <template>
     <YoutubeLayout>
-        <template #header>
+       <template #header>
             <Header/>
         </template>
         <template #sidebar>
@@ -22,8 +22,11 @@ import videos from '../components/card/videos.vue'
            
         </template>
         <template #video>
-             <videos/>
+             <Videos/>
         </template>
+        
+            
+       
         
     </YoutubeLayout>
 </template>
