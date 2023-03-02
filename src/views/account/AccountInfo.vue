@@ -3,4 +3,5 @@
     <div>UserName</div>
     <div>User Email</div>
 </div>
+<RouterView />
 </template>

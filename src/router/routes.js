@@ -1,6 +1,6 @@
 import Account from '@/views/account/Account.vue'
-import AccountInfo from '@/views/account/AccountInfo.vue'
-import AccountUpdate from '@/views/account/AccountUpdate.vue'
+import AccountInfo from '../views/account/AccountInfo.vue'
+import AccountUpdate from '../views/account/AccountUpdate.vue'
 const routes = [
     {
         path: '/',
