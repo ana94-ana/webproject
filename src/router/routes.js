@@ -68,7 +68,7 @@ const routes = [
         component: { template: '<div>Sports</div>' },
     },
     {
-        path:'/account/',
+        path:'/account/:userId',
         name: "Account",
         component: Account,
         childen:[
