@@ -7,7 +7,7 @@ const store=useStore()
 const tags =store.getters['tags/tags']
 </script>
 <template>
-  <div class="sticky top-0 w-full">
+  <div class="space-y2 w-[10vw] sticky fixed ">
     <ul class="flex ml-60">
       <li class="mr-3">
        <Tag/>

@@ -11,7 +11,6 @@ import PopularOnesIcon from '../../../components/icon/sidebarDiscoveryIcon/Popul
 import MusicIcon from '../../../components/icon/sidebarDiscoveryIcon/MusicIcon.vue'
 import VideoGamesIcon from '../../../components/icon/sidebarDiscoveryIcon/VideoGamesIcon.vue'
 import SportsIcon from '../../../components/icon/sidebarDiscoveryIcon/SportsIcon.vue'
-
 const navigationModule = {
     namespaced: true,
     state() {
@@ -82,6 +81,13 @@ const navigationModule = {
                     to: 'Sports',
                     icon: SportsIcon
                 },
+                {
+                    title: 'სპორტი',
+                    to: 'Sports',
+                    icon: SportsIcon
+                },
+                
+                
             ]
         }
     },

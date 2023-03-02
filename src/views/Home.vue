@@ -10,23 +10,7 @@ import Videos from '../components/card/Videos.vue'
 
 <template>
     <YoutubeLayout>
-       <template #header>
-            <Header/>
-        </template>
-        <template #sidebar>
-            
-           <Sidebar/>  
-        </template>
-        <template #tags>
-            <TagsSlider/>
-           
-        </template>
-        <template #video>
-             <Videos/>
-        </template>
-        
-            
-       
-        
+        <TagsSlider />
+        <Videos />
     </YoutubeLayout>
 </template>

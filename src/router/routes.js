@@ -1,4 +1,6 @@
-
+import Account from '@/views/account/Account.vue'
+import AccountInfo from '@/views/account/AccountInfo.vue'
+import AccountUpdate from '@/views/account/AccountUpdate.vue'
 const routes = [
     {
         path: '/',
@@ -64,6 +66,24 @@ const routes = [
         path: '/sports',
         name: "Sports",
         component: { template: '<div>Sports</div>' },
+    },
+    {
+        path:'/account/',
+        name: "Account",
+        component: Account,
+        childen:[
+            {
+                path:'info',
+                name: "AccountInfo",
+                component: AccountInfo,
+            },
+            {
+                path:'update',
+                name: "AccountUpdate",
+                component: AccountUpdate,
+            }
+
+        ]
     },
 
 

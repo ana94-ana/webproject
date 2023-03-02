@@ -5,6 +5,7 @@ const videosModule = {
         return {
             video: [
                 {
+                    id:1,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -12,6 +13,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:2,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -19,6 +21,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:3,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -26,6 +29,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:4,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -33,6 +37,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:5,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -40,6 +45,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:6,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -47,6 +53,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:7,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -54,6 +61,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:8,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -61,6 +69,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:9,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -68,6 +77,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:10,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko?t=5",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
@@ -75,6 +85,7 @@ const videosModule = {
                 
                 },
                 {
+                    id:11,
                     image:"https://tse3.mm.bing.net/th?id=OIP.awRFiN5xNH8xHnBxaHjSfgHaFj&pid=Api&P=0",
                     url:"https://youtu.be/Ea3Uk8ZE5ko",
                     name:"Marshmello, Avicii, Coldplay, Martin Garrix",
