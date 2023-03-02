@@ -71,7 +71,7 @@ const routes = [
         path:'/account/:userId',
         name: "Account",
         component: Account,
-        childen:[
+        children:[
             {
                 path:'info',
                 name: "AccountInfo",

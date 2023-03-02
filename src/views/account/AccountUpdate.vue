@@ -4,5 +4,4 @@
         <div>LastName</div>
         <div>Email</div>
     </div>
-    <RouterView />
 </template>
