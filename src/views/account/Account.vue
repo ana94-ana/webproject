@@ -11,4 +11,5 @@
             <RouterLink :to="{ name: 'AccountUpdate', params: { userId: 1 } }">User Update</RouterLink>
         </li>
     </ul>
-<RouterView /></template>
+<RouterView />
+</template>
