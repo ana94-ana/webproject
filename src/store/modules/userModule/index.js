@@ -32,7 +32,7 @@ const userModule = {
     },
     mutations: {
         AUTENTIFICATE(state, payload) {
-            let user = state.user.filter(value => value.email === payload.email && user.password === payload.password)
+            let user = state.user.find(value => value.email === payload.email && user.password === payload.password)
             if (user) {
                 state.autentificated = user
             }
