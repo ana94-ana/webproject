@@ -1,5 +1,5 @@
 const userModule = {
-    namespased: true,
+    namespaced: true,
     state() {
         return {
             autentificated: null,
@@ -32,7 +32,7 @@ const userModule = {
     },
     mutations: {
         AUTENTIFICATE(state, payload) {
-            let user = state.user.find(value => value.email === payload.email && user.password === payload.password)
+            let user = state.user.find(value => value.email === payload.email && value.password === payload.password)
             if (user) {
                 state.autentificated = user
             }
@@ -54,6 +54,7 @@ const userModule = {
         },
         registration({ commit }, payload) {
             commit('REGISTER_USER', payload)
+            commit('AUTENTIFICATE', payload)
         },
         updateUser({ commit }, payload) {
             commit('UPDATE_USER', payload)

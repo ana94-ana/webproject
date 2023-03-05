@@ -81,11 +81,6 @@ const navigationModule = {
                     to: 'Sports',
                     icon: SportsIcon
                 },
-                {
-                    title: 'სპორტი',
-                    to: 'Sports',
-                    icon: SportsIcon
-                },
                 
                 
             ]

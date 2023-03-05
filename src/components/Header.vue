@@ -18,7 +18,10 @@ import youtubeLogo from "./logo/youtubeLogo.vue"
     <div class="flex flex-row justify-end w-full space-x-4 ">
       <CreateIcon />
       <NotificationIcon />
-      <AcountIcone />
+      <router-link to="/account">
+         <AcountIcone  />
+        </router-link>
+     
     </div>
   </div>
 </template>

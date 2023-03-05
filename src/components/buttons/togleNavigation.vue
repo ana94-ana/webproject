@@ -3,7 +3,7 @@ import {useStore} from 'vuex'
 
 const store=useStore()
 const menuOn=()=> {
-    store.dispatch('menu/togleMenu')
+    store.dispatch('')
 }
 
 

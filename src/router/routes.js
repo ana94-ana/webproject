@@ -65,7 +65,7 @@ const routes = [
     {
         path: '/sports',
         name: "Sports",
-        component: { template: '<div>Sports</div>' },
+        component: { template: '<div>Sports</div>' }
     },
     {
         path:'/account/:userId',
