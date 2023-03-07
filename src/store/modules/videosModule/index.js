@@ -1,3 +1,6 @@
+import getters from "./getters"
+import mutations from "./mutations"
+import actions from "./actions"
 
 const videosModule = {
     namespaced: true,
@@ -97,33 +100,9 @@ const videosModule = {
             ]
         }
     },
-    getters: {
-        getVideos(state) {
-            return state.videos
-        },
-        getSearch(state) {
-
-
-            if (state.searchVideo !== null) {
-                return state.videos.filter(video => video.name.toLowerCase().includes(state.searchVideo.toLowerCase()))
-            }
-            else {
-                return state.videos
-            }
-        }
-    },
-    mutations: {
-        UPDATE_SEARCH_VIDEO(state, payload) {
-            payload = (payload == "") ? null : payload
-            state.searchVideo = payload
-        }
-    },
-    actions: {
-        updateSearchVideo({ commit }, payload) {
-            commit('UPDATE_SEARCH_VIDEO', payload)
-        }
-    }
-
+    getters,
+    mutations,
+    actions,
 }
 
 export default videosModule
