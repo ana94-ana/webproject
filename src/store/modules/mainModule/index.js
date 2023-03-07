@@ -1,5 +1,3 @@
-
-
 const mainModule = {
     namespaced: true,
     state() {

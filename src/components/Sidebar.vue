@@ -1,7 +1,6 @@
 <script setup>
 import SidebarFirst from './sidebar/SidebarFirst.vue'
 
-
 </script>
 <template>
     <div class="space-y2 w-[10vw] cticky ">

@@ -6,8 +6,6 @@ const menuOn=()=> {
     store.dispatch('')
 }
 
-
-
 </script>
 <template>
 

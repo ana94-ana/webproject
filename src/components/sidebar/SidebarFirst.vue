@@ -6,8 +6,6 @@ import { computed } from 'vue'
 const store = useStore()
 const menu = computed(() => store.getters['sidebar/getSidebarMenu'])
 
-
-
 </script>
 <template>
   <div class="w-full ">

@@ -5,9 +5,7 @@ import Header from '../components/Header.vue'
 import TagsSlider from '../components/sliders/TagsSlider.vue'
 import Videos from '../components/card/Videos.vue'
 
-
 </script>
-
 <template>
     <YoutubeLayout>
         <TagsSlider />
