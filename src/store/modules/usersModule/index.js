@@ -1,3 +1,7 @@
+import getters from "./getters"
+import mutations from "./mutations"
+import actions from "./actions"
+
 const userModule = {
     namespaced: true,
     state() {
@@ -25,41 +29,8 @@ const userModule = {
             ]
         }
     },
-    getters: {
-        userAutentificated(state) {
-            return state.autentificated
-        }
-    },
-    mutations: {
-        AUTENTIFICATE(state, payload) {
-            let user = state.user.find(value => value.email === payload.email && value.password === payload.password)
-            if (user) {
-                state.autentificated = user
-            }
-
-        },
-        REGISTER_USER(state, payload) {
-            state.user.push(payload)
-        },
-        UPDATE_USER(state, payload) {
-            state.users.find(user => state.autentificated.id === user.id).name = payload.name
-            state.users.find(user => state.autentificated.id === user.id).email = payload.email
-            state.users.find(user => state.autentificated.id === user.id).password = payload.password
-        }
-
-    },
-    actions: {
-        autentificate({ commit }, payload) {
-            commit('AUTENTIFICATE', payload)
-        },
-        registration({ commit }, payload) {
-            commit('REGISTER_USER', payload)
-            commit('AUTENTIFICATE', payload)
-        },
-        updateUser({ commit }, payload) {
-            commit('UPDATE_USER', payload)
-        }
-
-    }
+    getters,
+    mutations,
+    actions,
 }
 export default userModule
