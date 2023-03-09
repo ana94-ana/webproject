@@ -1,10 +1,12 @@
 import Account from '@/views/account/Account.vue'
-import { RouterView } from 'vue-router'
 import AccountInfo from '../views/account/AccountInfo.vue'
 import AccountUpdate from '../views/account/AccountUpdate.vue'
 import Dashboard from '../views/dashboard/Dashboard.vue'
 import AllUsers from '../views/dashboard/AllUsers.vue'
 import UserInfo from '../views/dashboard/UserInfo.vue'
+import UserForm from '../components/users/UserForm.vue'
+import Register from '../components/users/Register.vue'
+import Login from '../components/users/Login.vue'
 const routes = [
     {
         path: '/',
@@ -103,6 +105,25 @@ const routes = [
                         path: 'info',
                         name: "UserInfo",
                         component: UserInfo,
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        path: '/userform',
+        name: "UserForm",
+        component: UserForm,
+        children: [
+            {
+                path: 'register',
+                name: "Register",
+                component: Register,
+                children: [
+                    {
+                        path: 'login',
+                        name: "Login",
+                        component:Login,
                     }
                 ]
             }
