@@ -1,6 +1,10 @@
 import Account from '@/views/account/Account.vue'
+import { RouterView } from 'vue-router'
 import AccountInfo from '../views/account/AccountInfo.vue'
 import AccountUpdate from '../views/account/AccountUpdate.vue'
+import Dashboard from '../views/dashboard/Dashboard.vue'
+import AllUsers from '../views/dashboard/AllUsers.vue'
+import UserInfo from '../views/dashboard/UserInfo.vue'
 const routes = [
     {
         path: '/',
@@ -68,23 +72,42 @@ const routes = [
         component: { template: '<div>Sports</div>' }
     },
     {
-        path:'/account/:userId',
+        path: '/account/:id',
         name: "Account",
         component: Account,
-        children:[
+        children: [
             {
-                path:'info',
+                path: 'info',
                 name: "AccountInfo",
                 component: AccountInfo,
             },
             {
-                path:'update',
+                path: 'update',
                 name: "AccountUpdate",
                 component: AccountUpdate,
             }
 
         ]
     },
+    {
+        path: '/dashboard',
+        name: "Dashboard",
+        component: Dashboard,
+        children: [
+            {
+                path: 'users/:userId',
+                name: "AllUsers",
+                component: AllUsers,
+                children: [
+                    {
+                        path: 'info',
+                        name: "UserInfo",
+                        component: UserInfo,
+                    }
+                ]
+            }
+        ]
+    }
 
 
 ]
