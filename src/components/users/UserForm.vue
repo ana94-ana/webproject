@@ -17,7 +17,7 @@
                 <li>
                     <router-link
                         class="flex items-center p-2 text-base font-normal border bg-violet-600 text-white  rounded-lg dark:text-white hover:bg-gray-500 dark:hover:bg-gray-300"
-                        to="/userform">categories</router-link>
+                        :to="{ name: 'Categories' }">categories</router-link>
                 </li>
             </ul>
         </div>

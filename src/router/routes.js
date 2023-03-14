@@ -7,6 +7,7 @@ import UserInfo from '../views/dashboard/UserInfo.vue'
 import UserForm from '../components/users/UserForm.vue'
 import Register from '../components/users/Register.vue'
 import Login from '../components/users/Login.vue'
+import Categories from '../views/dashboard/Categories.vue'
 
 
 const routes = [
@@ -127,6 +128,11 @@ const routes = [
                 path: 'login',
                 name: "Login",
                 component: Login,
+            },
+            {
+                path: 'categories',
+                name: "Categories",
+                component: Categories,
             }
         ]
     },
