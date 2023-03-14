@@ -1,10 +1,10 @@
 <script setup>
 import axios from 'axios'
 import { useStore } from 'vuex'
-import routes from '../../router/routes'
+import {useRouter} from 'vue-router'
 import { ref } from 'vue'
 
-const router = routes
+const router= useRouter()
 const store = useStore()
 const name = ref("")
 const email = ref("")
@@ -16,15 +16,15 @@ function submit() {
         email: email.value,
         password: password.value
     }
-    axios.post('https://items.magischer.de/api/auth/register', register)
+    axios.post( '/auth/register', register)
         .then(res => {
-            console.log(res.register)
+           // console.log(res.register)
             router.push({ name: "Register" })
         })
 }
 </script>
 <template>
-    <form @submit.prevevent="submit">
+    <form @submit.prevent="submit">
         <div class="w-96 mt-4">
             <div class="mb-6 mkl-[280px] ">
                 <div class="mb-4">

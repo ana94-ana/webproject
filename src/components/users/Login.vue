@@ -2,34 +2,38 @@
 import axios from 'axios'
 import { useStore } from 'vuex'
 import { ref } from 'vue'
+import {useRouter} from 'vue-router'
 
 const store = useStore()
+const router= useRouter()
 const email = ref("")
 const password = ref("")
 
 function submit() {
-    const singin = {
+    const credentials = {
         email: email.value,
         password: password.value
     }
 
-      axios.post('https://items.magischer.de/api/auth/login', singin)
+      axios.post('/auth/login', credentials)
       .then(response => {
-        if(response.singin.status){
-           this.$store.dispatch('USER_REGISTER/token', response.singin.token)
-              this.$router.push({ name: 'UserForm'})
+        console.log(response)
+        if(response.data.status){
+           store.dispatch('register/token', response.data)
+              router.push({ name: 'UserForm'})
             }else{
-              this.$router.push({name: 'UserForm', params: 'error'})
+              router.push({name: 'UserForm', params: 'error'})
             }
           })
-          .catch(error => {
+          .catch(error => { 
+            console.log(error)
           });
 
     }
 
 </script>
 <template>
-    <form @submit.prevevent="submit">
+    <form @submit.prevent="submit">
     <div class="w-96 mt-4">
         <div class="mb-6 mkl-[280px] ">
             <div class="mb-4">
