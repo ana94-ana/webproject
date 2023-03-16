@@ -4,7 +4,7 @@ import AccountUpdate from '../views/account/AccountUpdate.vue'
 import UserForm from '../components/users/UserForm.vue'
 import Register from '../components/users/Register.vue'
 import Login from '../components/users/Login.vue'
-import Categories from '../views/dashboard/Categories.vue'
+import Categories from '../views/categories/Categories.vue'
 
 
 const routes = [

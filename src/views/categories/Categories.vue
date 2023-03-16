@@ -20,14 +20,14 @@ const toggleEditing = async (id) => {
         editings.value[id] = true
     }
 }
-const categories = computed(() => store.getters['register/getCategories'])
+const categories = computed(() => store.getters['categories/getCategories'])
 const addCategory = async () => {
-    await store.dispatch('register/addCategory', newUserName.value)
+    await store.dispatch('categories/addCategory', newUserName.value)
     newUserName.value = ''
 };
-const deleteCategory = async (id) => confirm('Do rou want to Delete Category?') ? await store.dispatch('register/deleteCategory', id): null
-const editCategory = async (data) => await store.dispatch('register/editCategory', data)
-onMounted(() => store.dispatch('register/getCategories'))
+const deleteCategory = async (id) => confirm('Do rou want to Delete Category?') ? await store.dispatch('categories/deleteCategory', id): null
+const editCategory = async (data) => await store.dispatch('categories/editCategory', data)
+onMounted(() => store.dispatch('categories/getCategories'))
 </script>
 
 <template>
