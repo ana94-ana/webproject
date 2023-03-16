@@ -34,24 +34,14 @@ const categoriesModule={
               name,
               type: "news",
             },
-            {
-              headers: {
-                Accept: "application/json",
-                  Authorization: `Bearer ${getters.token}`,
-              },
-            }
+            
           ).catch(e => console.log(e));
           dispatch('getCategories');
         },
         async deleteCategory({getters, dispatch}, id) {
            await axios.delete(
             `/categories/${id}`,
-            {
-              headers: {
-                Accept: "application/json",
-                Authorization: `Bearer ${getters.token}`,
-              },
-            }
+            
           ).catch(e => console.log(e));
           dispatch('getCategories');
         },
@@ -62,15 +52,9 @@ const categoriesModule={
               name: category.name,
               type: "news",
             },
-            {
-              headers: {
-                Accept: "application/json",
-                Authorization: `Bearer ${getters.token}`,
-              },
-            }
+            
           ).catch(e => console.log(e));
-          dispatch('getCategories');
-          console.log('getCategories')
+          dispatch('getCategories')
         },
         
   }
