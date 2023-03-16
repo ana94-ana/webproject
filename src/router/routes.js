@@ -1,9 +1,6 @@
 import Account from '@/views/account/Account.vue'
 import AccountInfo from '../views/account/AccountInfo.vue'
 import AccountUpdate from '../views/account/AccountUpdate.vue'
-import Dashboard from '../views/dashboard/Dashboard.vue'
-import AllUsers from '../views/dashboard/AllUsers.vue'
-import UserInfo from '../views/dashboard/UserInfo.vue'
 import UserForm from '../components/users/UserForm.vue'
 import Register from '../components/users/Register.vue'
 import Login from '../components/users/Login.vue'
@@ -92,25 +89,6 @@ const routes = [
                 component: AccountUpdate,
             }
 
-        ]
-    },
-    {
-        path: '/dashboard',
-        name: "Dashboard",
-        component: Dashboard,
-        children: [
-            {
-                path: 'users/:userId',
-                name: "AllUsers",
-                component: AllUsers,
-                children: [
-                    {
-                        path: 'info',
-                        name: "UserInfo",
-                        component: UserInfo,
-                    }
-                ]
-            }
         ]
     },
     {

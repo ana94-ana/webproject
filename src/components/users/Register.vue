@@ -10,17 +10,18 @@ const name = ref("")
 const email = ref("")
 const password = ref("")
 
-function submit() {
-    const register = {
-        name: name.value,
-        email: email.value,
-        password: password.value
-    }
-    axios.post( '/auth/register', register)
-        .then(res => {
-           // console.log(res.register)
-            router.push({ name: "Register" })
-        })
+const submit = async () => {
+  const data = {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+  };
+  await axios.post('/auth/register', data).then(response => {
+      if (response.data.status) {
+        store.dispatch('register/token', response.data)
+        router.push({ name: 'Login'})
+      }
+    }).catch((e) => console.log(e))
 }
 </script>
 <template>
@@ -44,8 +45,8 @@ function submit() {
                 </div>
             </div>
             <button type="submit"
-                class="text-white bg-gray-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Autorization</button>
+            class="bg-green-700 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">
+                Register</button>
         </div>
     </form>
 </template>

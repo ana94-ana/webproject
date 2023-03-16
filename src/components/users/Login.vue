@@ -9,25 +9,18 @@ const router= useRouter()
 const email = ref("")
 const password = ref("")
 
-function submit() {
-    const credentials = {
-        email: email.value,
-        password: password.value
-    }
+const submit = async () => {
+  const data = {
+    email: email.value,
+    password: password.value,
+  };
+  await axios.post('/auth/login', data).then(response => {
+          if (response.data.status) {
+            store.dispatch('register/token', response.data)
+            router.push({ name: 'Categories'})
+          }
+        }).catch((e) => console.log(e))
 
-      axios.post('/auth/login', credentials)
-      .then(response => {
-        console.log(response)
-        if(response.data.status){
-           store.dispatch('register/token', response.data)
-              router.push({ name: 'UserForm'})
-            }else{
-              router.push({name: 'UserForm', params: 'error'})
-            }
-          })
-          .catch(error => { 
-            console.log(error)
-          });
 
     }
 
@@ -48,7 +41,7 @@ function submit() {
         </div>
 
         <button type="submit"
-            class="text-white bg-gray-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        class="bg-green-700 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">
             Autorization</button>
     </div>
     </form>
