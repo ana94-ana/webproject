@@ -27,7 +27,7 @@ const categoriesModule={
               commit("SAVE_CATEGORIES", res.data.data);
             }
       },
-      async addCategory({getters, dispatch}, name) {
+      async addCategory({dispatch}, name) {
           await axios.post(
             `/categories`,
             {
@@ -38,14 +38,14 @@ const categoriesModule={
           ).catch(e => console.log(e));
           dispatch('getCategories');
         },
-        async deleteCategory({getters, dispatch}, id) {
+        async deleteCategory({dispatch}, id) {
            await axios.delete(
             `/categories/${id}`,
             
           ).catch(e => console.log(e));
           dispatch('getCategories');
         },
-        async editCategory({getters, dispatch}, category) {
+        async editCategory({dispatch}, category) {
           await axios.put(
             `/categories/${category.id}`,
             {
