@@ -1,5 +1,5 @@
 
-import categoriesModule from "../../views/categories"
+import categoriesModule from "../modules/categoriesModule"
 import userModule from "../modules/usersModule"
 import registerModule from "../modules/usersModule/register"
 

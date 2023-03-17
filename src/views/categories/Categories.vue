@@ -52,7 +52,8 @@ onMounted(() => store.dispatch('categories/getCategories'))
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         <p v-if="!editings[user.id]">{{ user.name }}</p>
                         <div v-else>
-                            <input type="text" v-model="newName" class="bg-slate-300 bg-gray-50 border text-gray-900 text-sm rounded-lg  w-50 p-2.5 dark:bg-gray-700   "/>
+                            <input :placeholder="(user.name)" type="text" v-model="newName" class="bg-slate-300 bg-gray-50 border text-gray-900 text-sm rounded-lg  w-50 p-2.5 dark:bg-gray-700 " />
+                            
                             <button @click="toggleEditing(user.id)" class="bg-green-700 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">Save</button>
                         </div>
                     </th>
@@ -62,7 +63,7 @@ onMounted(() => store.dispatch('categories/getCategories'))
                     <td class=" bg-red-600 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">
                         <button @click="deleteCategory(user.id)">Delete</button>
                     </td>
-                    <td class="bg-green-700 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center">
+                    <td class="bg-green-700 text-white font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center ">
                         <button @click="toggleEditing(user.id)">Edit</button>
                     </td>
                 </tr>

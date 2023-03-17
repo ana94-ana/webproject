@@ -22,7 +22,7 @@ const categoriesModule={
 
   actions: {
       async getCategories({commit}) {
-          const res = await axios.get(`/categories`).catch(e => console.log(e));
+          const res = await axios.get(`categories`).catch(e => console.log(e));
             if (res.data.success) {
               commit("SAVE_CATEGORIES", res.data.data);
             }

@@ -1,10 +1,3 @@
-import Account from '@/views/account/Account.vue'
-import AccountInfo from '../views/account/AccountInfo.vue'
-import AccountUpdate from '../views/account/AccountUpdate.vue'
-import UserForm from '../components/users/UserForm.vue'
-import Register from '../components/users/Register.vue'
-import Login from '../components/users/Login.vue'
-import Categories from '../views/categories/Categories.vue'
 
 
 const routes = [
@@ -76,17 +69,17 @@ const routes = [
     {
         path: '/account/:id',
         name: "Account",
-        component: Account,
+        component: () => import('@/views/account/Account.vue'),
         children: [
             {
                 path: 'info',
                 name: "AccountInfo",
-                component: AccountInfo,
+                component:() => import('@/views/account/AccountInfo.vue'),
             },
             {
                 path: 'update',
                 name: "AccountUpdate",
-                component: AccountUpdate,
+                component: () => import('@/views/account/AccountUpdate.vue'),
             }
 
         ]
@@ -94,23 +87,23 @@ const routes = [
     {
         path: '/userform',
         name: "UserForm",
-        component: UserForm,
+        component: () => import('@/components/users/UserForm.vue'),
         children: [
             {
                 path: 'register',
                 name: "Register",
-                component: Register,
+                component: () => import('@/components/users/Register.vue'),
 
             },
             {
                 path: 'login',
                 name: "Login",
-                component: Login,
+                component:() => import('@/components/users/Login.vue'),
             },
             {
                 path: 'categories',
                 name: "Categories",
-                component: Categories,
+                component: () => import('@/views/categories/Categories.vue'),
             }
         ]
     },

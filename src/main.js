@@ -7,9 +7,9 @@ import axios from 'axios'
 
 axios.defaults.baseURL=import.meta.env.VITE_BASE_API_URL
 axios.defaults.headers['Accept'] = 'Application/json'
-axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem("token"))
+axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem("token","user"))
 
-console.log(axios.defaults)
+
 createApp(App)
     .use(store)
     .use(router)
